@@ -32,4 +32,18 @@ func main() {
 	// 	{Name: "Keyboard", Price: 100.00},
 	// }
 	// db.Create(&products)
+
+	// select one
+	// var product Product
+	// db.First(&product, 2)
+	// fmt.Println(product)
+	// db.First(&product, "name = ?", "Mouse")
+	// fmt.Println(product)
+
+	// select all
+	// var products []Product
+	// db.Find(&products)
+	// for _, product := range products {
+	// 	fmt.Println(product)
+	// }
 }
