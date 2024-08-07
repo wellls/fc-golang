@@ -6,9 +6,10 @@ import (
 )
 
 type Product struct {
-	ID    int `gorm:"primaryKey"`
-	Name  string
-	Price float64
+	ID         int `gorm:"primaryKey"`
+	Name       string
+	Price      float64
+	gorm.Model //createdat, updatedat, deletedat
 }
 
 func main() {
